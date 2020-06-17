@@ -1,0 +1,16 @@
+  public Board(Map<String, Object> row) {
+		this.setId((int) (long) row.get("id"));
+		this.setName((String) row.get("name"));
+		this.setCode((String) row.get("code"));
+	}
+  
+  public Article(Map<String, Object> row) {
+		this.setId((int) (long) row.get("id"));
+		String regDate = row.get("regDate") + "";
+		this.setRegDate(regDate);
+		this.setHit((int)(long) row.get("hit"));
+		this.setTitle((String) row.get("title"));
+		this.setBody((String) row.get("body"));
+		this.setMemberId((int) (long) row.get("memberId"));
+		this.setBoardId((int) (long) row.get("boardId"));
+	}
